@@ -1,2 +1,4 @@
 mod leetcodes;
-fn main() {}
+fn main() {
+    println!("You suck")
+}

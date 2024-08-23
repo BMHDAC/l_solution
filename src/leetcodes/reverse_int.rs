@@ -1,5 +1,6 @@
-trait Solution {}
-impl dyn Solution {
+use super::Solution;
+
+impl Solution {
     pub fn reverse(x: i32) -> i32 {
         fn reverse_inner(mut x: i32) -> Option<i32> {
             let is_neg = if x < 0 {

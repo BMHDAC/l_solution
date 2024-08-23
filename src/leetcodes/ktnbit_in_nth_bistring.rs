@@ -1,5 +1,6 @@
-trait Solution {}
-impl dyn Solution {
+use super::Solution;
+
+impl Solution {
     pub fn find_kth_bit(n: i32, k: i32) -> char {
         let string = Self::create_char(n);
         let v: Vec<char> = string.chars().collect();

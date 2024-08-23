@@ -6,3 +6,5 @@ mod longest_sub_string_norep;
 mod phone_letters_comb;
 mod reverse_int;
 mod roman_to_int;
+
+pub struct Solution {}

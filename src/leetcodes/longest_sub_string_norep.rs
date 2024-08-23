@@ -1,6 +1,7 @@
 use std::cmp::max;
-trait Solution {}
-impl dyn Solution {
+
+use super::Solution;
+impl Solution {
     pub fn length_of_longest_substring(s: String) -> i32 {
         let mut last_index: Vec<i32> = vec![-1; 256];
         let mut i = 0;

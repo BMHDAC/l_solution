@@ -1,6 +1,7 @@
 use std::collections::HashMap;
-trait Solution {}
-impl dyn Solution {
+
+use super::Solution;
+impl Solution {
     pub fn roman_to_int(s: String) -> i32 {
         let mut h: HashMap<char, i32> = HashMap::new();
         h.insert('I', 1);

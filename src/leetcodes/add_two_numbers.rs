@@ -1,3 +1,5 @@
+use super::Solution;
+
 #[derive(PartialEq, Eq, Clone, Debug)]
 pub struct ListNode {
     pub val: i32,
@@ -10,8 +12,7 @@ impl ListNode {
         ListNode { next: None, val }
     }
 }
-trait Solution {}
-impl dyn Solution {
+impl Solution {
     pub fn add_two_numbers(
         l1: Option<Box<ListNode>>,
         l2: Option<Box<ListNode>>,

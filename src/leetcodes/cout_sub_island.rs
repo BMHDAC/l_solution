@@ -1,5 +1,6 @@
-trait Solution {}
-impl dyn Solution {
+use super::Solution;
+
+impl Solution {
     pub fn count_sub_islands(grid1: Vec<Vec<i32>>, grid2: Vec<Vec<i32>>) -> i32 {
         let mut results: i32 = 0;
         let mut visited: Vec<Vec<bool>> = vec![vec![false; grid1[0].len()]; grid1.len()];

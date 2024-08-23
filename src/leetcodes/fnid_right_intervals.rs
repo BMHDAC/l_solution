@@ -1,7 +1,9 @@
 use std::collections::HashMap;
-trait Solution {}
+
+use super::Solution;
+
 impl Solution {
-    pub fn find_right_interval(intervals: Vec<Vec<i32>>) -> Vec<i32> {
+    fn find_right_interval(intervals: Vec<Vec<i32>>) -> Vec<i32> {
         let mut starts = Vec::new();
         let mut start_with_index = HashMap::new();
         for (index, interval) in intervals.iter().enumerate() {
