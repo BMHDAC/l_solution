@@ -1,15 +1,3 @@
-use std::collections::HashMap;
-
-mod leetcodes;
-fn main() {
-    let mut time_map = TimeMap::new();
-    time_map.set("foo".to_string(), "bar".to_string(), 1);
-    let res_1 = time_map.get("foo".to_string(), 1);
-    println!("{}", res_1);
-    time_map.set("foo".to_owned(), "bar2".to_owned(), 4);
-    println!("{}", time_map.get("foo".to_owned(), 5));
-}
-
 struct TimeMap {
     pool: HashMap<String, Vec<(i32, String)>>,
 }
