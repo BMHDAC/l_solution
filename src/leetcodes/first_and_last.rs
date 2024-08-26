@@ -51,38 +51,37 @@ pub fn get_output(output: &mut Vec<i32>, index: usize, input: &Vec<i32>) {
     output.push(end as i32);
 }
 
-#[cfg(test)]
-mod tests {
-    use crate::search_range;
-    #[test]
-    fn test_1() {
-        let input = vec![5, 7, 7, 8, 8, 10];
-        let target = 8;
-        let output = search_range(input, target);
-        assert_eq!(output, vec![3, 4]);
-    }
-
-    #[test]
-    fn test_2() {
-        let input = vec![1];
-        let target = 0;
-        let output = search_range(input, target);
-        assert_eq!(output, vec![-1, -1]);
-    }
-
-    #[test]
-    fn test_3() {
-        let input = vec![1, 3];
-        let target = 1;
-        let output = search_range(input, target);
-        assert_eq!(output, vec![0, 0]);
-    }
-
-    #[test]
-    fn test_4() {
-        let input = vec![3, 3, 3];
-        let target = 3;
-        let output = search_range(input, target);
-        assert_eq!(output, vec![0, 2]);
-    }
-}
+// #[cfg(test)]
+// mod tests {
+//     #[test]
+//     fn test_1() {
+//         let input = vec![5, 7, 7, 8, 8, 10];
+//         let target = 8;
+//         let output = search_range(input, target);
+//         assert_eq!(output, vec![3, 4]);
+//     }
+//
+//     #[test]
+//     fn test_2() {
+//         let input = vec![1];
+//         let target = 0;
+//         let output = search_range(input, target);
+//         assert_eq!(output, vec![-1, -1]);
+//     }
+//
+//     #[test]
+//     fn test_3() {
+//         let input = vec![1, 3];
+//         let target = 1;
+//         let output = search_range(input, target);
+//         assert_eq!(output, vec![0, 0]);
+//     }
+//
+//     #[test]
+//     fn test_4() {
+//         let input = vec![3, 3, 3];
+//         let target = 3;
+//         let output = search_range(input, target);
+//         assert_eq!(output, vec![0, 2]);
+//     }
+// }

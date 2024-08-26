@@ -7,5 +7,6 @@ pub mod longest_sub_string_norep;
 pub mod phone_letters_comb;
 pub mod reverse_int;
 pub mod roman_to_int;
+mod snap_shot_array;
 
 pub struct Solution {}
